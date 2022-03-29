@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Online Alarm Clock -vClock</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="edit-timer" style="display: none;">
+      <nav>
+        <span>Edit Timer</span>
+        <i id="edit-close" class="fa-solid fa-xmark" style="display: block;"></i>
+      </nav>
+     <div class="edit-hero-cover">
+      <div class="edit-hero">
+        <div class="edit-elm">
+          <label for="">Hours</label>
+          <input id="hour-input" value="0" type="number" />
+        </div>
+        <div class="edit-elm">
+          <label for="">Minutes</label>
+          <input id="minute-input" type="number" />
+        </div>
+        <div class="edit-elm">
+          <label for="">Seconds</label>
+          <input id="second-input" type="number" />
+        </div>
+      </div>
+      <div class="footer">
+        <button class="edit-cancel" style="display: block;">Cancel</button>
+        <button class="edit-start" style="display: block;">Start</button>
+      </div>
+     </div>
+    </div>
+    <nav class="navbar">
+      <div class="navbar-fluid">
+        <div class="logo">
+          <img src="asset/logo-full.png" alt="" />
+        </div>
+        <div class="navbar-left">
+          <ul>
+            <li>Holidays</li>
+            <li>Tools</li>
+          </ul>
+          <div class="icon">
+            <i class="fa-solid fa-circle-half-stroke"></i>
+            <i class="fa-solid fa-gear"></i>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <div class="main">
+      <div class="left-sidebar">
+        <div class="sidebar-content">
+          <a href="index.html">
+            <i class="fa-regular fa-bell"></i>
+            <p>Alarm Clock</p>
+          </a>
+        </div>
+
+        <div class="sidebar-content">
+          <a href="timer.html">
+            <i class="fa-regular fa-clock"></i>
+            <p>Timer</p>
+          </a>
+        </div>
+        <div class="sidebar-content">
+          <a href="stopwatch.html">
+            <i class="fa-solid fa-stopwatch" id="stopwatch"></i>
+            <p>Stop Watch</p>
+          </a>
+        </div>
+        <div class="sidebar-content">
+          <a href="time.html">
+            <i class="fa-regular fa-clock"></i>
+            <p>Time</p>
+          </a>
+        </div>
+      </div>
+      <div class="main-content">
+        <div class="main-container-fluid">
+          <p><span id="hour-value"> 00</span> : <span id="minute-value"> 00</span> : <span id="second-value"> 00</span> </p>
+          <div class="btn-group">
+            <button class="edit">Edit Timer</button>
+            <button class="reset">Reset</button>
+            <button class="start">Start</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

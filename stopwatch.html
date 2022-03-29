@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Online Alarm Clock -vClock</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+
+    <nav class="navbar">
+      <div class="navbar-fluid">
+        <div class="logo">
+          <img src="asset/logo-full.png" alt="" />
+        </div>
+        <div class="navbar-left">
+          <ul>
+            <li>Holidays</li>
+            <li>Tools</li>
+          </ul>
+          <div class="icon">
+            <i class="fa-solid fa-circle-half-stroke"></i>
+            <i class="fa-solid fa-gear"></i>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <div class="main">
+      <div class="left-sidebar">
+        <div class="sidebar-content">
+          <a href="index.html">
+            <i class="fa-regular fa-bell"></i>
+            <p>Alarm Clock</p>
+          </a>
+        </div>
+
+        <div class="sidebar-content">
+          <a href="timer.html">
+            <i class="fa-regular fa-clock"></i>
+            <p>Timer</p>
+          </a>
+        </div>
+        <div class="sidebar-content">
+          <a href="stopwatch.html">
+            <i class="fa-solid fa-stopwatch" id="stopwatch"></i>
+            <p>Stop Watch</p>
+          </a>
+        </div>
+        <div class="sidebar-content">
+          <a href="time.html">
+            <i class="fa-regular fa-clock"></i>
+            <p>Time</p>
+          </a>
+        </div>
+      </div>
+      <div class="main-content">
+        <div class="main-container-fluid">
+          <div class="main-container-fluid">
+            <p>
+              <span id="minute">00</span>:<span id="second">00</span>.<span
+                id="miliSecond"
+                style="font-size: 4rem"
+                >00</span
+              >
+            </p>
+            <div class="btn-group">
+              <button class="reset">reset</button>
+              <button class="start">start</button>
+              <button class="stop" style="background-color: rgb(214, 59, 59);">stop</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="stopWatch.js"></script>
+  </body>
+</html>
